@@ -2,28 +2,32 @@
 
 ---
 
-## 1. User Onboarding & Booking Flow
+## 1. User Onboarding and Booking Flow
 
 ```mermaid
 flowchart TD
-    A[Landing Page] --> B[Sign Up / Login]
-    B --> C[Consent & Privacy Acceptance]
+
+    A[Landing Page] --> B[Sign Up or Login]
+    B --> C[Consent and Privacy Acceptance]
     C --> D[User Dashboard]
-    D --> E{Find Expert}
-    E -->|Browse Experts| F[Expert Listing]
-    E -->|Take Assessment| G[Assessment]
+    D --> E[Find Expert]
+
+    E --> F[Browse Experts]
+    E --> G[Take Assessment]
+
     F --> H[Expert Profile]
     G --> H[Recommended Expert Profile]
-    H --> I[Select Date & Time]
+
+    H --> I[Select Date and Time]
     I --> J[Payment]
     J --> K[Booking Confirmation]
     K --> L[Online Consultation]
 
 
-
 flowchart TD
-    A[Start Assessment] --> B[Instructions]
-    B --> C[Questionnaire]
+
+    A[Start Assessment] --> B[Assessment Instructions]
+    B --> C[Answer Questions]
     C --> D[Submit Answers]
     D --> E[Matching Logic]
     E --> F[Recommended Experts]
@@ -32,30 +36,40 @@ flowchart TD
 
 
 flowchart TD
+
     A[Upcoming Session] --> B[Reminder Notification]
     B --> C[Join Session]
     C --> D[Waiting Room]
-    D --> E[Video / Audio Consultation]
+    D --> E[Video or Audio Consultation]
     E --> F[Session Ends]
     F --> G[Session Summary]
 
 
 flowchart TD
-    A[Professional Sign Up] --> B[Verification]
-    B --> C[Create Profile]
+
+    A[Professional Sign Up] --> B[Email or Phone Verification]
+    B --> C[Create Professional Profile]
     C --> D[Upload Credentials]
     D --> E[Submit for Review]
-    E --> F{Admin Decision}
-    F -->|Approved| G[Dashboard Access]
-    F -->|Rejected| H[Feedback & Edit]
+    E --> F[Admin Review]
+
+    F --> G[Approved]
+    F --> H[Rejected]
+
+    G --> I[Professional Dashboard Access]
+    H --> J[Edit Profile and Resubmit]
 
 
 flowchart TD
-    A[Admin Login] --> B[Dashboard]
-    B --> C[Roles & Permissions]
+
+    A[Admin Login] --> B[Admin Dashboard]
+    B --> C[Roles and Permissions]
     C --> D[Create Role]
     D --> E[Assign Permissions]
     E --> F[Save Role]
     F --> G[Create Admin User]
     G --> H[Assign Role]
+
+
+
 ```
