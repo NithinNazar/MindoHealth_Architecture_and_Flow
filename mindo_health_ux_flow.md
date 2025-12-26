@@ -27,7 +27,7 @@ flowchart TD
     K --> L[Online Consultation]
 
 
-2. Assessment Based Expert Matching Flow
+
 
 flowchart TD
 
@@ -38,7 +38,7 @@ flowchart TD
     E --> F[Recommended Experts]
     F --> G[Book Session]
 
-3.Consultation Flow
+
 
 flowchart TD
 
@@ -49,7 +49,7 @@ flowchart TD
     E --> F[Session Ends]
     F --> G[Session Summary]
 
-4.Professional Onboarding Flow
+
 
 flowchart TD
 
@@ -66,7 +66,7 @@ flowchart TD
     H --> J[Edit Profile and Resubmit]
 
 
-5. Professional Session and Earnings Flow
+
 
 flowchart TD
 
@@ -77,7 +77,7 @@ flowchart TD
     E --> F[Payout Processing]
 
 
-6. Admin Role and Permission Management Flow
+
 
 flowchart TD
 
