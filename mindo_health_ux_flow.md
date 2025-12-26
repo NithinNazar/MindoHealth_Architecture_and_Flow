@@ -1,5 +1,8 @@
 # Mindo Health – UX Flow Diagrams (Phase 1)
 
+This document defines the core UX flows for the Mindo Health platform.
+All diagrams are written using GitHub-compatible Mermaid syntax.
+
 ---
 
 ## 1. User Onboarding and Booking Flow
@@ -24,6 +27,8 @@ flowchart TD
     K --> L[Online Consultation]
 
 
+2. Assessment Based Expert Matching Flow
+
 flowchart TD
 
     A[Start Assessment] --> B[Assessment Instructions]
@@ -33,7 +38,7 @@ flowchart TD
     E --> F[Recommended Experts]
     F --> G[Book Session]
 
-
+3.Consultation Flow
 
 flowchart TD
 
@@ -44,6 +49,7 @@ flowchart TD
     E --> F[Session Ends]
     F --> G[Session Summary]
 
+4.Professional Onboarding Flow
 
 flowchart TD
 
@@ -51,14 +57,27 @@ flowchart TD
     B --> C[Create Professional Profile]
     C --> D[Upload Credentials]
     D --> E[Submit for Review]
-    E --> F[Admin Review]
 
+    E --> F[Admin Review]
     F --> G[Approved]
     F --> H[Rejected]
 
     G --> I[Professional Dashboard Access]
     H --> J[Edit Profile and Resubmit]
 
+
+5. Professional Session and Earnings Flow
+
+flowchart TD
+
+    A[Professional Dashboard] --> B[Upcoming Sessions]
+    B --> C[Join Session]
+    C --> D[Consultation Completed]
+    D --> E[Earnings Updated]
+    E --> F[Payout Processing]
+
+
+6. Admin Role and Permission Management Flow
 
 flowchart TD
 
@@ -69,7 +88,4 @@ flowchart TD
     E --> F[Save Role]
     F --> G[Create Admin User]
     G --> H[Assign Role]
-
-
-
 ```
